@@ -2,6 +2,7 @@ import { Fragment, useState, useRef, useEffect } from "react";
 
 import TodoList from "./Components/Todos/TodoList";
 import Button from "./Components/UI/Button/Button";
+import Input from "./Components/UI/Input/Input";
 
 const LOCAL_STORAGE = "ToDoApplicationStorage";
 
@@ -54,7 +55,14 @@ function App() {
   return (
     <Fragment>
       <TodoList todosList={todosList} checkTodo={checkTodo} />
-      <input ref={todoRef} type="text" />
+      <Input
+        ref={todoRef}
+        name="Write new task"
+        input={{
+          type: "text",
+          default: "Do ...",
+        }}
+      />
       <Button onClick={handleNewTodo}>Add new task!</Button>
       <Button onClick={handleClearCompletedTasks}>Clear Completed Tasks</Button>
       <div>{todosList.filter((todo) => !todo.checked).length} left to do</div>
