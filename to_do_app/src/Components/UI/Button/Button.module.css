@@ -1,9 +1,8 @@
 .button {
-  width: 250px;
-  height: 100px;
-  font: inherit;
+  width: 100px;
+  height: 50px;
   color: white;
-  background: #00848b;
+  background: #aaaaaa;
   cursor: pointer;
   border-radius: 8px;
   text-align: center;
@@ -15,6 +14,6 @@
 
 .button:hover,
 .button:active {
-  background: #ac0e77;
-  border-color: #ac0e77;
+  background: #a1a1a1;
+  border-color: #a1a1a1;
 }

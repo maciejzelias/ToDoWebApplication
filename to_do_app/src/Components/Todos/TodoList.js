@@ -1,10 +1,12 @@
 import React from "react";
 
+import styles from "./TodoList.module.css";
+
 import TodoCart from "./TodoCart";
 
 export default function TodoList(props) {
   return (
-    <div>
+    <div className={styles.list}>
       {props.todosList.map((todo) => {
         return (
           <TodoCart
