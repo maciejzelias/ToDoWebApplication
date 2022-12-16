@@ -57,7 +57,7 @@ function App() {
   return (
     <Fragment>
       <header className={styles.header}>
-        <h1>ToDoApplication</h1>
+        <h1>Aplikacja do robienia rzeczy</h1>
       </header>
       <main>
         <div className={styles.fragment}>
